@@ -26,7 +26,7 @@ export default function Portfolio() {
             <p className="text-sm text-gray-500 mb-4">Tech: React, JavaScript, Fetch API</p>
             <div className="flex gap-3">
               <a href="https://currency-converter-kappa-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
-              <a href="#" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
+              <a href="https://github.com/Akash-Muddhana/portfolio.git" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
             </div>
           </div>
 
