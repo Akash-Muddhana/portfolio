@@ -35,7 +35,7 @@ export default function Portfolio() {
             <p className="text-gray-400 mb-3">A responsive e-commerce UI with search, dynamic product rendering, and add-to-cart counter.</p>
             <p className="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript (Enhanced)</p>
             <div className="flex gap-3">
-              <a href="https://akash-muddhana.github.io/Amazon-Clone/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
+              <a href=" https://akash-muddhana.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
               <a href="https://github.com/Akash-Muddhana/Amazon-Clone" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
             </div>
           </div>
