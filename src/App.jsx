@@ -14,25 +14,34 @@ export default function Portfolio() {
         </div>
       </header>
 
-      
+
       <section id="projects" className="max-w-4xl mx-auto mb-20">
         <h2 className="text-3xl font-semibold mb-8">Projects</h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
+            <h3 className="text-xl font-bold mb-2">Currency Converter (React + API)</h3>
+            <p className="text-gray-400 mb-3">Real-time currency converter built using React with live exchange rate API integration. Includes dropdowns, controlled inputs, and dynamic conversion logic.</p>
+            <p className="text-sm text-gray-500 mb-4">Tech: React, JavaScript, Fetch API</p>
+            <div className="flex gap-3">
+              <a href="https://currency-converter-kappa-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
+              <a href="#" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
             <h3 className="text-xl font-bold mb-2">E-commerce Homepage Clone</h3>
-            <p className="text-gray-400 mb-3">A responsive e-commerce UI with search, dynamic product rendering, and add‑to‑cart counter.</p>
+            <p className="text-gray-400 mb-3">A responsive e-commerce UI with search, dynamic product rendering, and add-to-cart counter.</p>
             <p className="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript (Enhanced)</p>
             <div className="flex gap-3">
-              <a href=" https://akash-muddhana.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
+              <a href="https://akash-muddhana.github.io/Amazon-Clone/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
               <a href="https://github.com/Akash-Muddhana/Amazon-Clone" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
             </div>
           </div>
 
-          
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
-            <h3 className="text-xl font-bold mb-2">React E‑Commerce UI (Placeholder)</h3>
+            <h3 className="text-xl font-bold mb-2">React E-Commerce UI (Placeholder)</h3>
             <p className="text-gray-400 mb-3">Upcoming improved version using React + Tailwind. Modular components and better product rendering.</p>
             <p className="text-sm text-gray-500 mb-4">Tech: React, Tailwind CSS</p>
             <div className="flex gap-3">
@@ -42,7 +51,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-    
+     
       <section id="skills" className="max-w-4xl mx-auto mb-20">
         <h2 className="text-3xl font-semibold mb-8">Skills</h2>
 
@@ -66,7 +75,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      
       <section id="about" className="max-w-4xl mx-auto mb-20">
         <h2 className="text-3xl font-semibold mb-4">About Me</h2>
         <p className="text-gray-300 leading-relaxed max-w-2xl">
@@ -74,7 +82,6 @@ export default function Portfolio() {
         </p>
       </section>
 
-     
       <section id="contact" className="max-w-4xl mx-auto mb-20">
         <h2 className="text-3xl font-semibold mb-4">Contact</h2>
         <p className="text-gray-400">Email: akashmuddhana6969@gmail.com</p>
