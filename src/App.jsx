@@ -1,93 +1,255 @@
 import React from "react";
+import profilePic from "./assets/profile.png";
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-950 text-white px-6 py-12">
-      
-      <header className="max-w-4xl mx-auto flex flex-col gap-2 mb-16">
-        <h1 className="text-4xl font-bold">Akash Muddhana</h1>
-        <p className="text-lg text-gray-300">Frontend Developer | Learning ML/AI</p>
-        <div className="flex gap-4 mt-3">
-          <a href="#projects" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Projects</a>
-          <a href="#skills" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">Skills</a>
-          <a href="#contact" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">Contact</a>
-        </div>
-      </header>
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-white px-6 py-12">
+      <div className="max-w-5xl mx-auto">
+        {/* Header / Hero */}
+        <header className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 mb-12">
+          <div className="mx-auto md:mx-0 flex-shrink-0">
+            <img
+              src={profilePic}
+              alt="Akash avatar"
+              className="w-32 h-32 rounded-full ring-2 ring-blue-500 shadow-lg object-cover"
+            />
+          </div>
 
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
+              Akash Muddhana
+            </h1>
+            <p className="text-gray-300 mt-2">
+              Frontend Developer — Exploring ML & AI
+            </p>
 
-      <section id="projects" className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold mb-8">Projects</h2>
+            <nav className="flex gap-3 mt-4">
+              <a
+                href="#projects"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-full shadow-sm"
+              >
+                Projects
+              </a>
+              <a
+                href="#skills"
+                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-full shadow-sm"
+              >
+                Skills
+              </a>
+              <a
+                href="#contact"
+                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-full shadow-sm"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+        </header>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          
-          <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
-            <h3 className="text-xl font-bold mb-2">Currency Converter (React + API)</h3>
-            <p className="text-gray-400 mb-3">Real-time currency converter built using React with live exchange rate API integration. Includes dropdowns, controlled inputs, and dynamic conversion logic.</p>
-            <p className="text-sm text-gray-500 mb-4">Tech: React, JavaScript, Fetch API</p>
-            <div className="flex gap-3">
-              <a href="https://currency-converter-kappa-wheat.vercel.app" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
-              <a href="https://github.com/Akash-Muddhana/currency-converter.git" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
+        {/* Projects */}
+        <section id="projects" className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+
+          <div className="grid gap-6 sm:grid-cols-2">
+            {/* Featured */}
+            <article className="bg-gray-900 p-6 rounded-2xl shadow-xl border border-gray-800 transform hover:-translate-y-1 transition">
+              <div className="flex items-start gap-4">
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold">Expense Tracker (MERN)</h3>
+                  <p className="text-gray-400 mt-2">
+                    Track transactions, calculate balances, and persist data to
+                    MongoDB . Clean UI and responsive layout.
+                  </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2 text-sm">
+                    <span className="bg-gray-800 px-2 py-1 rounded-full">
+                      MERN
+                    </span>
+                    <span className="bg-gray-800 px-2 py-1 rounded-full">
+                      Tailwind
+                    </span>
+                    <span className="bg-gray-800 px-2 py-1 rounded-full">
+                      MongoDB
+                    </span>
+                  </div>
+
+                  <div className="mt-4 flex gap-3">
+                    <a
+                      href="https://expense-tracker-iy2y.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700"
+                    >
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/Akash-Muddhana/expense-tracker"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700"
+                    >
+                     frontend Code
+                    </a>
+                     <a
+                      href="https://github.com/Akash-Muddhana/expense-tracker-backend"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700"
+                    >
+                     backend Code
+                    </a>
+                  </div>
+                </div>
+                <div className="w-24 h-24 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold">
+                  ET
+                </div>
+              </div>
+            </article>
+
+            {/* Other projects grid */}
+            <div className="grid gap-6">
+              <article className="bg-gray-900 p-5 rounded-2xl shadow-md border border-gray-800 flex items-start gap-4 hover:shadow-lg transition">
+                <div className="flex-1">
+                  <h4 className="font-semibold">Task Manager (React)</h4>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Add/edit/delete tasks with filters and persistent storage.
+                  </p>
+                  <div className="mt-3 flex gap-2">
+                    <a
+                      href="https://task-manager-nu-bay.vercel.app"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm px-3 py-1 bg-blue-600 rounded"
+                    >
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/Akash-Muddhana/task-manager"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm px-3 py-1 bg-gray-800 rounded"
+                    >
+                      Code
+                    </a>
+                  </div>
+                </div>
+                <div className="w-12 h-12 bg-indigo-600 rounded flex items-center justify-center">
+                  TM
+                </div>
+              </article>
+
+              <article className="bg-gray-900 p-5 rounded-2xl shadow-md border border-gray-800 flex items-start gap-4 hover:shadow-lg transition">
+                <div className="flex-1">
+                  <h4 className="font-semibold">Currency Converter</h4>
+                  <p className="text-gray-400 text-sm mt-1">
+                    Real-time rates via API with a simple, intuitive UI.
+                  </p>
+                  <div className="mt-3 flex gap-2">
+                    <a
+                      href="https://currency-converter-akash.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm px-3 py-1 bg-blue-600 rounded"
+                    >
+                      Live
+                    </a>
+                    <a
+                      href="https://github.com/Akash-Muddhana/currency-converter"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm px-3 py-1 bg-gray-800 rounded"
+                    >
+                      Code
+                    </a>
+                  </div>
+                </div>
+                <div className="w-12 h-12 bg-green-600 rounded flex items-center justify-center">
+                  CC
+                </div>
+              </article>
             </div>
           </div>
+        </section>
 
-          <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
-            <h3 className="text-xl font-bold mb-2">E-commerce Homepage Clone</h3>
-            <p className="text-gray-400 mb-3">A responsive e-commerce UI with search, dynamic product rendering, and add-to-cart counter.</p>
-            <p className="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript (Enhanced)</p>
-            <div className="flex gap-3">
-              <a href=" https://akash-muddhana.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-blue-600 rounded-xl hover:bg-blue-700">Live Demo</a>
-              <a href="https://github.com/Akash-Muddhana/Amazon-Clone" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-gray-800 rounded-xl hover:bg-gray-700">GitHub</a>
+        {/* Skills */}
+        <section id="skills" className="mb-16">
+          <h2 className="text-3xl font-semibold mb-6">Skills</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
+              <h4 className="font-semibold">Frontend</h4>
+              <div className="mt-2 flex flex-wrap gap-2 text-sm text-gray-300">
+                <span className="bg-gray-800 px-2 py-1 rounded">HTML</span>
+                <span className="bg-gray-800 px-2 py-1 rounded">CSS</span>
+                <span className="bg-gray-800 px-2 py-1 rounded">
+                  JavaScript
+                </span>
+                <span className="bg-gray-800 px-2 py-1 rounded">React</span>
+              </div>
+            </div>
+            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
+              <h4 className="font-semibold">Database</h4>
+              <div className="mt-2 flex flex-wrap gap-2 text-sm text-gray-300">
+                <span className="bg-gray-800 px-2 py-1 rounded">MongoDB</span>
+              </div>
+            </div>
+            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
+              <h4 className="font-semibold">Frameworks</h4>
+              <div className="mt-2 flex flex-wrap gap-2 text-sm text-gray-300">
+                <span className="bg-gray-800 px-2 py-1 rounded">React</span>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
+              <h4 className="font-semibold">Tools</h4>
+              <div className="mt-2 flex flex-wrap gap-2 text-sm text-gray-300">
+                <span className="bg-gray-800 px-2 py-1 rounded">Git</span>
+                <span className="bg-gray-800 px-2 py-1 rounded">Github</span>
+              </div>
             </div>
           </div>
+        </section>
 
-          <div className="bg-gray-900 p-5 rounded-2xl shadow-lg border border-gray-800">
-            <h3 className="text-xl font-bold mb-2">React E-Commerce UI (Placeholder)</h3>
-            <p className="text-gray-400 mb-3">Upcoming improved version using React + Tailwind. Modular components and better product rendering.</p>
-            <p className="text-sm text-gray-500 mb-4">Tech: React, Tailwind CSS</p>
-            <div className="flex gap-3">
-              <a href="#" className="px-4 py-2 bg-gray-700 rounded-xl cursor-not-allowed opacity-50">Coming Soon</a>
-            </div>
-          </div>
-        </div>
-      </section>
+        {/* About */}
+        <section id="about" className="mb-12">
+          <h2 className="text-3xl font-semibold mb-4">About Me</h2>
+          <p className="text-gray-300 leading-relaxed max-w-2xl">
+            Computer Science undergraduate skilled in frontend development and
+            modern web technologies. Strong foundation in JavaScript, React, and
+            Python with hands-on experience building responsive applications.
+            Experienced in developing full-stack applications using the MERN
+            stack (MongoDB, Express.js, React, Node.js).
+          </p>
+        </section>
 
-     
-      <section id="skills" className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold mb-8">Skills</h2>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-            <h4 className="font-semibold mb-1">Languages</h4>
-            <p className="text-gray-400 text-sm">HTML, CSS, JavaScript, Python</p>
+        {/* Contact */}
+        <section id="contact" className="mb-8">
+          <h2 className="text-3xl font-semibold mb-4">Contact</h2>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="mailto:akashmuddhana6969@gmail.com"
+              className="px-4 py-2 bg-blue-600 rounded-lg w-fit"
+            >
+              Email
+            </a>
+            <a
+              href="https://github.com/Akash-Muddhana"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 rounded-lg w-fit"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/akash-muddhana-aba9b0331"
+              target="_blank"
+              rel="noreferrer"
+              className="px-4 py-2 bg-gray-800 rounded-lg w-fit"
+            >
+              LinkedIn
+            </a>
           </div>
-          <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-            <h4 className="font-semibold mb-1">Frameworks</h4>
-            <p className="text-gray-400 text-sm">React, Tailwind CSS</p>
-          </div>
-          <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-            <h4 className="font-semibold mb-1">Tools</h4>
-            <p className="text-gray-400 text-sm">Git, GitHub, Vercel</p>
-          </div>
-          <div className="bg-gray-900 p-4 rounded-xl border border-gray-800">
-            <h4 className="font-semibold mb-1">Currently Learning</h4>
-            <p className="text-gray-400 text-sm">Machine Learning, APIs</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-        <p className="text-gray-300 leading-relaxed max-w-2xl">
-          I build clean and fast web applications using modern frontend tools. I learn fast, execute fast, and constantly push myself to grow. Currently improving JavaScript and React, and preparing for ML projects.
-        </p>
-      </section>
-
-      <section id="contact" className="max-w-4xl mx-auto mb-20">
-        <h2 className="text-3xl font-semibold mb-4">Contact</h2>
-        <p className="text-gray-400">Email: akashmuddhana6969@gmail.com</p>
-        <p className="text-gray-400">GitHub: https://github.com/Akash-Muddhana</p>
-        <p className="text-gray-400">LinkedIn: www.linkedin.com/in/akash-muddhana-aba9b0331</p>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

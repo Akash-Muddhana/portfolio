@@ -1,0 +1,10 @@
+Place your profile image file here so the app can import it as `./assets/profile.jpg`.
+
+- Filename (required): profile.jpg
+- Path (relative to repo): src/assets/profile.jpg
+
+Steps:
+1. Save the image you attached as `profile.jpg` in `src/assets/`.
+2. Run the dev server (e.g., `npm run dev` or your existing start command) to see the change.
+
+If you prefer a PNG, update the import in `src/App.jsx` to `./assets/profile.png` instead.
