@@ -313,7 +313,7 @@ export default function Portfolio() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="mailto:akashmuddhana6969@gmail.com"
+                  href="mailto:akash.muddhana.dev@gmail.com"
                   className="rounded-lg bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
                 >
                   Email
